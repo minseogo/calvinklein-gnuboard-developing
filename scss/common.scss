@@ -132,9 +132,10 @@ a{
             transition: height 0.5s;
             }
             .gnb_li{
-                padding:0 80px;
+                padding:0 50px;
                 .gnb_ul{
                     height: 180px;  
+                    width: 100%;
                 }
             }    
         }
@@ -147,7 +148,7 @@ a{
                 .gnb_a{
                     span{
                         &:before {
-                            width: 40%; 
+                            width: 50%; 
                         }
                     }   
                 }
@@ -157,7 +158,7 @@ a{
                 margin-right: 20px;
                 span{
                     &:before {
-                    content: "";
+                            content: "";
                             transform: translateX(-50%);
                             left: 50%;
                             height: 4px;
@@ -176,17 +177,13 @@ a{
             overflow: hidden;
             height: 0;
             top: 100%;
-            // margin-top: 30px !important;
             transition: height 0.2s;
-            // left: -93px;
-            transform: translateX(-50%);
-            left: 50%;
             padding: 0;
             text-align: center;
-            white-space: nowrap !important;
             position: absolute;
-            min-width: 150px;
-      
+            left: 45%;
+            transform: translateX(-50%);
+            
             &:after,
             &:before {
               content: "";
