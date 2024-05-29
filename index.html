@@ -56,31 +56,71 @@
    
 </head>
 <body>
-    <header id="hd" class="px-5 py-1 d-flex flex-md-row justify-content-between align-items-center">
-        <h1 class="my-0"><a href="/" class="d-block"><img class="img-fluid d-block" src="./img/ck-logo.svg" alt=""></a></h1>
-        <ul class="gnb d-flex ps-0 pt-3 ms-3 ro_header_semibold_16">
-            <li><a href="">MEN</a></li>
-            <li><a href="">WOMEN</a></li>
-            <li><a href="">SPORTS</a></li>
-            <li><a href="">DISCOVERY</a></li>
+    <header id="hd" class="mx-5 my-2 d-flex justify-content-between align-items-center">
+        <h1 class="mb-0"><a href="/" class="d-block"><img class="img-fluid d-block" src="./img/ck-logo.svg" alt=""></a></h1>
+        
+        <ul class="gnb d-flex ro_header_semibold_16">
+
+            <li class="gnb_li position-realtive ">
+                <a href="" class="gnb_a d-block">MEN</a>
+            
+                <ul class="gnb_ul position-absolute ro_header_light_13">
+                    <li class="gnb_ul_li_a"><a href=""><span>온라인 익스클루시브</span></a></li>
+                    <li class="gnb_ul_li"><a href=""><span>남성 의류</span></a></li>
+                    <li class="gnb_ul_li"><a href=""><span>악세서리</span></a></li>
+                    <li class="gnb_ul_li"><a href=""><span>언더웨어</span></a></li>
+                    <li class="gnb_ul_li"><a href=""><span>슈즈</span></a></li>
+            </ul>
+        </li>
+        <li class="gnb_li  position-realtive">
+                <a href="" class="gnb_a d-block">WOMEN</a>
+                
+                <ul class="gnb_ul position-absolute ro_header_light_13">
+                    <li class="gnb_ul_li"><a href=""><span>온라인 익스클루시브</span></a></li>
+                    <li class="gnb_ul_li"><a href=""><span>여성 의류</span></a></li>
+                    <li class="gnb_ul_li"><a href=""><span>악세서리</span></a></li>
+                    <li class="gnb_ul_li"><a href=""><span>언더웨어</span></a></li>
+                    <li class="gnb_ul_li"><a href=""><span>슈즈</span></a></li>
+                </ul>
+            </li>
+            <li class="gnb_li  position-realtive">
+                <a href="" class="gnb_a d-block">SPORTS</a>
+                
+                <ul class="gnb_ul position-absolute ro_header_light_13">
+                    <li class="gnb_ul_li"><a href=""><span>남성 스포츠</span></a></li>
+                    <li class="gnb_ul_li"><a href=""><span>여성 스포츠</span></a></li>
+                    <li class="gnb_ul_li"><a href=""><span>수영복</span></a></li>
+                </ul>
+
+            </li>
+            <li class="gnb_li position-realtive">
+                <a href="" class="gnb_a d-block">DISCOVERY</a>
+                
+                <ul class="gnb_ul position-absolute ro_header_light_13">
+                    <li class="gnb_ul_li"><a href=""><span>About Calvin klein</span></a></li>
+                    <li class="gnb_ul_li"><a href=""><span>What's New</span></a></li>
+                    <li class="gnb_ul_li"><a href=""><span>Best Seller</span></a></li>
+                    <li class="gnb_ul_li"><a href=""><span>Sustainability</span></a></li>
+                </ul>
+            </li>
         </ul>
         <ul class="member ro_header_light_13">
-            <li><a href="">Sign in</a></li>
+            <li><a href="" class="mx-3">Sign in</a></li>
             <li><a href="">Register</a></li>
         </ul>
         <ul class="iconMenu">
            <li>
-                <i> 
+                <i class="mx-1"> 
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m776.31-159.27-247.82-248q-29.68 25.54-68.57 39.17-38.88 13.64-77.11 13.64-94.77 0-159.92-65.27-65.16-65.27-65.16-159.5t65.06-159.65q65.06-65.43 159.5-65.43t159.86 65.34q65.43 65.35 65.43 159.68 0 40.98-14.66 79.92-14.65 38.95-38.15 66.3l248 247.34-26.46 26.46ZM382.65-391.38q79.12 0 133.56-54.3t54.44-133.75q0-79.45-54.44-133.7-54.44-54.25-133.75-54.25T248.9-713.09q-54.25 54.3-54.25 133.75 0 79.46 54.29 133.71 54.28 54.25 133.71 54.25Z"/></svg>
                 </i>
                 <span class="visually-hidden">검색</span></li> <!-- 아이콘은 읽어주지 않기 때문에 청각장애인분들을 위해 span태그 넣어서 글자 넣어주기 -->
             <li>
-                <i>  
+                <i class="mx-1">  
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480.21-492.5q26.02 0 44.54-18.53 18.52-18.54 18.52-44.56 0-26.03-18.61-44.54-18.62-18.52-44.75-18.52-26.14 0-44.47 18.61-18.32 18.61-18.32 44.75t18.53 44.46q18.53 18.33 44.56 18.33ZM480-174.77q111.25-98.09 176.01-198.7 64.76-100.61 64.76-173.95 0-108.66-68.46-179.41t-172.38-70.75q-103.93 0-172.31 70.75-68.39 70.75-68.39 179.41 0 73.34 64.76 173.95Q368.75-272.86 480-174.77Zm0 49.39Q341.58-249.35 271.94-355.02q-69.63-105.67-69.63-192.22 0-124.04 80.86-205.27 80.87-81.22 196.83-81.22 115.96 0 196.83 81.22 80.86 81.23 80.86 205.27 0 86.55-69.63 192.22Q618.42-249.35 480-125.38Zm0-430Z"/></svg>
                 </i>
                 <span class="visually-hidden">위치</span></li>
             <li>
-                <i>
+                <i class="mx-1">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M227.69-126.15q-25.57 0-43.56-17.98-17.98-17.99-17.98-43.56v-425.85q0-25.58 17.98-43.56 17.99-17.98 43.56-17.98h96.62q0-65.11 45.29-110.4 45.28-45.29 110.4-45.29t110.4 45.29q45.29 45.29 45.29 110.4h96.62q25.57 0 43.56 17.98 17.98 17.98 17.98 43.56v425.85q0 25.57-17.98 43.56-17.99 17.98-43.56 17.98H227.69Zm0-36.93h504.62q9.23 0 16.92-7.69 7.69-7.69 7.69-16.92v-425.85q0-9.23-7.69-16.92-7.69-7.69-16.92-7.69H227.69q-9.23 0-16.92 7.69-7.69 7.69-7.69 16.92v425.85q0 9.23 7.69 16.92 7.69 7.69 16.92 7.69Zm252.27-280q65.04 0 110.39-45.31 45.34-45.32 45.34-110.38h-36.92q0 49.39-34.62 84.08T480.07-480q-49.45 0-84.15-34.64-34.69-34.64-34.69-84.13h-36.92q0 65 45.3 110.35 45.31 45.34 110.35 45.34Zm-118.73-232h237.54q0-49.38-34.62-84.07-34.62-34.7-84.08-34.7-49.45 0-84.15 34.64-34.69 34.65-34.69 84.13Zm-158.15 512V-638.15-163.08Z"/></svg>
                 </i>
                 <span class="visually-hidden">장바구니</span></li>
