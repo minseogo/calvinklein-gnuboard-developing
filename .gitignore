@@ -1,2 +1,5 @@
 *.css
 *.scss
+.vscode
+**/data/
+**/*config.*
