@@ -54,7 +54,7 @@ $(document).ready(function() {
         let gnbli = "";
         
         menuData.forEach(function(menuItem, idx) {
-            gnbli += `<li class="gnb_li position-realtive">`;
+            gnbli += `<li class="gnb_li position-relative">`;
             gnbli += `<a href="" class="gnb_a d-block">${menuItem.category}</a>`;
             gnbli += `<ul class="gnb_ul position-absolute eng_hdr_sub_lt_13">`;
 
