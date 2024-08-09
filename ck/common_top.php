@@ -31,7 +31,7 @@
     <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
     <link href="//fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/ec/css/fonts.css">
+    <link rel="stylesheet" href="/ck/css/fonts.css">
 
     <!-- font icon -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -42,6 +42,8 @@
     <!-- 그리드 시스템 -->
     <link href="//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+
+    <link rel="stylesheet" href="http://gominseo.dothome.co.kr/gnuboard/skin/board/subsecond/style.css?ver=2303229">
     <!-- 플러그인 -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="//cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -50,13 +52,13 @@
     <script src="//unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- 커스터마이징 -->
-    <link rel="stylesheet" href="/ec/css/common.min.css">
-    <link rel="stylesheet" href="/ec/css/ck.min.css">
+    <link rel="stylesheet" href="/ck/css/common.min.css">
+    <link rel="stylesheet" href="/ck/css/ck.min.css">
  
     <script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   
 
-    <script src="/ec/js/common.js"></script>
+    <script src="/ck/js/common.js"></script>
 
    
 </head>
@@ -65,7 +67,7 @@
         <div class="d-flex align-items-baseline justify-content-between ">
             <button id="hamburger-btn" class="bi bi-list border-0 bg-transparent ms-1 d-lg-none"></button> 
             <h1 class="mb-0 d-block">
-                <a href="/" class="d-block text-decoration-none text-nowrap">
+                <a href="/ck" class="d-block text-decoration-none text-nowrap">
                     <img class="img-fluid d-block" src="https://www.calvinklein.co.kr/on/demandware.static/-/Library-Sites-calvin-klein-shared-library/default/dw65bf7326/header/full-logo.svg" alt="">
                 </a>
             </h1>
@@ -74,13 +76,24 @@
                 <button class="bi bi-bag border-0 bg-transparent mx-1"></button>
             </div>
             <div class="px-5 d-none d-lg-flex">
-              <?php include_once("./navi.php");?>
+              <?php include_once(G5_PATH."/../ck/navi.php");?>
             </div>
         </div>
         <div class="d-flex align-items-center right_topmenu">
             <ul class="d-lg-flex align-items-center position-relative eng_hdr_sub_lt_13 gnb_reg px-xl-5 pe-3">
-                <li><a href="" class="mx-3">Sign in</a></li>
-                <li><a href="">Register</a></li>
+                
+                
+
+                <?php if ($is_member) {  ?>
+                    <li><a href="<?php echo G5_BBS_URL ?>/logout.php" class="mx-3">Sign Out</a></li>
+                    <li><a href="<?php echo G5_BBS_URL ?>/member_confirm.php?url=<?php echo G5_BBS_URL ?>/register_form.php">Modify</a></li>          
+                <?php } else {  ?>
+                    <li><a href="<?php echo G5_BBS_URL ?>/login.php" class="mx-3">Sign in</a></li>
+                    <li><a href="<?php echo G5_BBS_URL ?>/register.php">Register</a></li>
+                <?php }  ?>
+
+
+                
             </ul>
             <ul class="d-lg-flex align-items-center position-relative hd_icons">
                 <li>

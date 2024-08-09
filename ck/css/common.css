@@ -169,6 +169,12 @@ h6 {
     font-size: 13px;
   }
 }
+@media (max-width: 575px) {
+  .eng_mo_sec_title_reg_11 {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+}
 
 .kr_sub_txt_black_lt_16 {
   font-size: 16px;

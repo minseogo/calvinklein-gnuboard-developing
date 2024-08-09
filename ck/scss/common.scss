@@ -120,6 +120,10 @@ h6{
     @media (max-width:990px) {
         font-size: 13px;
     }
+    @media (max-width:575px) {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
 }
 .kr_sub_txt_black_lt_16{
     font-size: 16px;

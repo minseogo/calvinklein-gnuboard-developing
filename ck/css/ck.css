@@ -238,6 +238,13 @@ h1 img {
     height: 35px;
   }
 }
+@media (max-width: 575px) {
+  #celebrity_outfit .celeb_btn {
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+  }
+}
 
 #calvin_selling {
   margin-left: 235px;
@@ -291,6 +298,15 @@ h1 img {
 @media (max-width: 575px) {
   #underwear img {
     width: 100% !important;
+    height: auto;
+  }
+  #underwear .m_img {
+    bottom: -60%;
+  }
+  #underwear .m_btn {
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
   }
 }
 
@@ -322,6 +338,11 @@ h1 img {
   background-color: #F6F1E2;
   border-radius: 0 4px 4px 0;
   box-sizing: border-box;
+}
+@media (max-width: 990px) {
+  #email_form .submit_button {
+    width: 0;
+  }
 }
 #email_form .submit_button:hover {
   background-color: #333;
@@ -355,6 +376,11 @@ h1 img {
   }
   #email_form .email_input::placeholder {
     text-align: start;
+  }
+}
+@media (max-width: 575px) {
+  #email_form {
+    margin-top: 100px;
   }
 }
 

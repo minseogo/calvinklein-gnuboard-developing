@@ -1,5 +1,6 @@
 <?php 
-  include_once("./common_top.php")
+  include_once("./_common.php");
+  include_once("./common_top.php");
 ?>
         <div id="mainimg">
             <div class="overlay position-relative">
@@ -157,16 +158,32 @@
                     <img class="w-100 h-100 object-fit-cover" src="./img/underwear_title.png" alt="">
                   </div>
                   <div class="col-md-7 d-flex flex-column justify-content-between box_border_l">
-                    <div class="d-flex flex-fill box_border_b">
+                    <div class="d-flex flex-fill box_border_b position-relative">
                       <img class="w-50 h-100 object-fit-cover box_border_r" src="./img/underwear_men.png" alt="">
+
+                      <div class="m_img position-absolute top-0 left-0 d-sm-none w-100 text-white d-flex align-sm-items-center justify-content-sm-between flex-column ps-sm-3">
+                      <p class="d-flex flex-column pb-sm-5 eng_sec_title_white_reg_38">New Multipacks For Men
+                        <span class="font_kr kr_sub_txt_white_med_17">클래식한 코튼부터 마이크로 스트레치까지</span>
+                      </p>
+                      <button class="d-sm-none bg-transparent border-white text-white me-sm-3 mt-sm-5 m_btn kr_btn_txt_white_med_16">남성 언더웨어 구매하기</button>
+                      </div>
+                      
                       <div class="bg-black d-sm-flex d-none align-items-end w-50 h-100">
                         <p class="font_eng eng_sec_title_white_reg_38 d-flex flex-column mx-lg-5 py-lg-5 mx-2 my-2">New Multipacks For Men
                           <span class="font_kr kr_sub_txt_white_med_17">클래식한 코튼부터 마이크로 스트레치까지</span>
                         </p>
                       </div>
                     </div>
-                    <div class="d-flex flex-fill">
+                    <div class="d-flex flex-fill position-relative">
                       <img class="w-50 h-100 object-fit-cover order-2" src="./img/underwear_women.png" alt="">
+
+                      <div class="m_img position-absolute top-0 left-0 d-sm-none w-100 text-white d-flex align-items-sm-center justify-content-sm-between flex-column ps-sm-3">
+                      <p class="d-flex flex-column pb-sm-5 eng_sec_title_white_reg_38">Three Knickers For Women
+                        <span class="font_kr kr_sub_txt_white_med_17">캐주얼과 센슈얼리티의 또 다른 정의</span>
+                      </p>
+                      <button class="d-sm-none bg-transparent border-white text-white me-sm-3 mt-sm-5 m_btn kr_btn_txt_white_med_16">여성 언더웨어 구매하기</button>
+                      </div>                      
+
                       <div class="bg-black d-sm-flex d-none align-items-end justify-content-end w-50 h-100 box_border_r ">
                         <p class="font_eng eng_sec_title_white_reg_38 d-flex flex-column mx-lg-5 py-lg-5 mx-2 my-2 text-end">Three Knickers For Women
                           <span class="font_kr kr_sub_txt_white_med_17">캐주얼과 센슈얼리티의 또 다른 정의</span>
@@ -175,7 +192,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between align-items-center pic_txt_between border-bottom flex-md-row flex-column">
+                <div class="d-sm-flex d-none justify-content-between align-items-center pic_txt_between border-bottom flex-md-row flex-column">
                     <div class="txt_title_spacing text-center text-md-start">
                         <p class="font_eng eng_sec_title_black_reg_38 d-flex flex-column">Underwear Refresh
                             <span class="font_kr kr_sub_txt_black_med_17 mt-1">캘빈클라인의 아이코닉한 속옷으로 자신감과 섹시함을, 클래식한 디자인</span>
@@ -190,11 +207,11 @@
         </div>
         <div id="email_form">
             <div class="email_bg d-lg-flex justify-content-lg-evenly flex-lg-row d-flex flex-column align-items-center">
-                <p class="font_kr kr_form_txt_reg_14 d-flex flex-column align-items-center d-lg-block my-3 my-lg-0">
+                <p class="font_kr kr_form_txt_reg_14 d-flex flex-column align-items-center d-lg-block my-3 my-lg-0 text-center ">
                     My Calvins 멤버에게 주어지는 웰컴, 생일, 그리고 회원 전용 혜택을 누려보세요!
-                    <span>Black 멤버로 업그레이드 하시고 더 많은 혜택을 받으세요!</span> 
+                    <span class="text-center">Black 멤버로 업그레이드 하시고 더 많은 혜택을 받으세요!</span> 
                 </p>
-                <form class="d-flex align-items-center">
+                <form class="d-flex align-items-center mw-100">
                     <input type="email" placeholder="이메일 주소를 입력해주세요" class="email_input border-black border-bottom border-start border-top border-end-0 p-2 font_kr kr_form_txt_reg_14">
                     <button type="submit" class="submit_button text-black kr_form_txt_reg_14 border-1 d-flex align-items-center justify-content-lg-center justify-content-end text-center font_kr kr_form_txt_reg_14 border-black border-bottom border-start border-top border-end">
                         <span class="button_text">등록</span>

@@ -24,7 +24,7 @@
                     <ul class="text-white font_kr kr_ftr_main_txt_med_14 mx-lg-5 d-lg-flex flex-column  justify-content-between ">
                         <li class="font_kr kr_ftr_sub_txt_lt_14 mt-lg-3">연락처</li>
                         <li class="font_kr kr_ftr_sub_txt_lt_14">사이즈 가이드</li>
-                        <li class="font_kr kr_ftr_sub_txt_lt_14">FAQ</li>
+                        <li class="font_kr kr_ftr_sub_txt_lt_14"><a class="text-white" href="/gnuboard/bbs/faq.php?fm_id=1">FAQ</a></li>
                         <li class="font_kr kr_ftr_sub_txt_lt_14">반품 및 교환 정책</li>
                         <li class="font_kr kr_ftr_sub_txt_lt_14">배송</li>                 
                     </ul>

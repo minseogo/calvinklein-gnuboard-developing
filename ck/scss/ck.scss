@@ -238,7 +238,13 @@ h1 img {
             width: 150px;
             height: 35px;
         }
-    }
+        @media(max-width:575px){
+            border-top: 0 !important;
+            border-left: 0 !important;
+            border-right: 0 !important;
+        }
+
+        }
 }
 // 캘빈 제품 슬라이드
 #calvin_selling{
@@ -294,8 +300,18 @@ h1 img {
     @media(max-width:575px){
         img{
             width: 100% !important;
+            height: auto;
+        }
+        .m_img{
+            bottom: -60%;
+        }
+        .m_btn{
+            border-top: 0 !important;
+            border-left: 0 !important;
+            border-right: 0 !important;
         }
     }
+
 }
 // 이메일 폼
 #email_form{
@@ -323,6 +339,9 @@ h1 img {
         background-color: #F6F1E2;
         border-radius: 0 4px 4px 0;
         box-sizing: border-box;
+        @media(max-width:990px){
+            width: 0;
+        }
     }
     .submit_button:hover {
         background-color: #333;
@@ -355,6 +374,9 @@ h1 img {
         .email_input::placeholder {
             text-align: start;
         }
+    }
+    @media(max-width:575px){
+        margin-top: 100px;
     }
 }
 .follow_icons{
