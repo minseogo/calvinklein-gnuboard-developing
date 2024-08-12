@@ -211,6 +211,15 @@ h1 img {
   transform: translate(-50%, -50%);
 }
 
+@media (max-width: 375px) {
+  #mainimg img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: 200% !important;
+    height: auto;
+    margin-left: -50%;
+  }
+}
 #celebrity_outfit .text-overlay {
   top: 50%;
   left: 50%;
@@ -245,12 +254,26 @@ h1 img {
     border-right: 0 !important;
   }
 }
+@media (max-width: 375px) {
+  #celebrity_outfit img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: 200% !important;
+    height: auto;
+    margin-left: -50%;
+  }
+}
 
 #calvin_selling {
   margin-left: 235px;
 }
 #calvin_selling .swiper {
   max-width: 100%;
+}
+@media (max-width: 758px) {
+  #calvin_selling {
+    margin-left: 50px;
+  }
 }
 
 #video .bi-play-fill {
@@ -268,9 +291,18 @@ h1 img {
 #jk_new .btns_title_spacing {
   margin-top: 50px;
 }
-@media (max-width: 990px) {
+@media (max-width: 991px) {
   #jk_new .jk_mobile div {
     width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  #jk_new img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: 200% !important;
+    height: auto;
+    margin-left: -50%;
   }
 }
 
@@ -301,12 +333,21 @@ h1 img {
     height: auto;
   }
   #underwear .m_img {
-    bottom: -60%;
+    bottom: 5%;
   }
   #underwear .m_btn {
     border-top: 0 !important;
     border-left: 0 !important;
     border-right: 0 !important;
+    margin-top: 10rem;
+  }
+}
+@media (max-width: 320px) {
+  #underwear .m_img span {
+    display: none;
+  }
+  #underwear .m_btn {
+    margin-top: 5rem;
   }
 }
 

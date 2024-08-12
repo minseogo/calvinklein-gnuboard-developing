@@ -82,6 +82,14 @@ h6{
         font-size: 34px;
         letter-spacing: 11px;
     }
+    @media(max-width:575px) and (min-width: 376px){
+        font-size: 19px;
+        letter-spacing: 10px;
+    }
+    @media (max-width:375px) {
+        font-size: 21px;
+        letter-spacing: 2px;
+    }
 }
 .eng_img_sec_title_reg_24{
     font-size: 24px;
@@ -96,6 +104,13 @@ h6{
     }
     @media (max-width:990px) {
         font-size: 21px;
+    }
+    @media(max-width:575px) and (min-width: 376px){
+        font-size: 15px;
+    }
+    @media (max-width:375px) {
+        font-size: 18px;
+        letter-spacing: 3px;
     }
 }
 .kr_img_sec_title_lt_17{
@@ -122,6 +137,14 @@ h6{
     }
     @media (max-width:575px) {
         font-size: 15px;
+        letter-spacing: 2px;
+    }
+    @media(max-width:574px) and (min-width: 374px){
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+    @media (max-width:375px) {
+        font-size: 11px;
         letter-spacing: 2px;
     }
 }
@@ -206,6 +229,12 @@ h6{
     @media (max-width:575px) {
         font-size: 33px;
     }
+    @media(max-width:400px) and (min-width: 376px){
+        font-size: 31px;
+    }
+    @media (max-width:375px) {
+        font-size: 26px;
+    }
 }
 .eng_sec_title_white_reg_38{
     font-size: 38px;
@@ -220,11 +249,37 @@ h6{
     @media (max-width:1024px) {
         font-size: 25px;
     }
-    @media (max-width:990px) {
-        font-size: 25px;
+    @media (max-width:991px) {
+        font-size: 38px;
+    }
+    @media(max-width:990px) and (min-width: 768px){
+        font-size: 26px;
     }
     @media (max-width:758px) {
         font-size: 30px;
+    }
+}
+.eng_under_title_white_reg_38{
+    font-size: 38px;
+    font-weight: 400; /* regular */
+    color: white;
+    @media (max-width:1440px) {
+        font-size: 35px;
+    }
+    @media (max-width:1200px) {
+        font-size: 32px;
+    }
+    @media (max-width:1024px) {
+        font-size: 25px;
+    }
+    @media (max-width:990px) {
+        font-size: 30px;
+    }
+    @media (max-width:758px) {
+        font-size: 30px;
+    }
+    @media (max-width:375px) {
+        font-size: 28px;
     }
 }
 .eng_video_title_white_reg_30{
@@ -278,8 +333,37 @@ h6{
     @media (max-width:1024px) {
         font-size: 10px;
     }
+    @media (max-width:991px) {
+        font-size: 14px;
+    }
+    @media(max-width:990px) and (min-width: 768px){
+        font-size: 12px;
+    }
     @media (max-width:758px) {
         font-size: 13px;
+    }
+}
+.kr_under_txt_white_med_17{
+    font-size: 17px;
+    font-weight: 500; /* medium */
+    color: white;
+    @media (max-width:1440px) {
+        font-size: 14px;
+    }
+    @media (max-width:1200px) {
+        font-size: 11px;
+    }
+    @media (max-width:1024px) {
+        font-size: 10px;
+    }
+    @media (max-width:990px) {
+        font-size: 12px;
+    }
+    @media (max-width:758px) {
+        font-size: 13px;
+    }
+    @media (max-width:375px) {
+        font-size: 11px;
     }
 }
 .kr_ftr_main_txt_med_14{
@@ -425,7 +509,7 @@ h6{
     @media (max-width:990px){
         margin-left: 48px;
     }
-    @media (max-width:758px){
+    @media (max-width:767px){
         margin-left: 0px;
     }
 }

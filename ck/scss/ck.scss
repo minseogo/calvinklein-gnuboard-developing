@@ -216,6 +216,19 @@ h1 img {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+#mainimg{
+    @media (max-width: 375px) {
+        img {
+            object-fit: cover;
+            max-width: 200% !important;
+            height: auto;
+            margin-left: -50%;
+        }
+    }
+    @media(max-width:575px) and (min-width: 376px){
+        
+    }
+}
 // 셀럽 착장 컴포넌트
 #celebrity_outfit{
     .text-overlay {
@@ -245,12 +258,24 @@ h1 img {
         }
 
         }
+    img{
+        @media (max-width: 375px) {
+                object-fit: cover;
+                max-width: 200% !important;
+                height: auto;
+                margin-left: -50%;
+        }  
+    }
+    
 }
 // 캘빈 제품 슬라이드
 #calvin_selling{
     margin-left: 235px;
     .swiper {
         max-width: 100%;
+    }
+    @media (max-width:758px) {
+        margin-left: 50px;
     }
 }
 #video {
@@ -269,9 +294,17 @@ h1 img {
         margin-top: 50px;
     }
     .jk_mobile div{
-        @media (max-width:990px){
+        @media (max-width:991px){
             width: 100%;
         }
+    }
+    img{
+        @media (max-width: 375px) {
+                object-fit: cover;
+                max-width: 200% !important;
+                height: auto;
+                margin-left: -50%;
+        }  
     }
 }
 // 언더웨어 컴포넌트
@@ -303,15 +336,25 @@ h1 img {
             height: auto;
         }
         .m_img{
-            bottom: -60%;
+            bottom: 5%;
         }
         .m_btn{
             border-top: 0 !important;
             border-left: 0 !important;
             border-right: 0 !important;
+            margin-top: 10rem;
         }
     }
-
+    @media (max-width:320px){
+        .m_img {
+            span{
+                display: none;
+            }
+        }
+        .m_btn{
+            margin-top: 5rem;
+        }
+    }
 }
 // 이메일 폼
 #email_form{

@@ -4,12 +4,12 @@
 ?>
         <div id="mainimg">
             <div class="overlay position-relative">
-                <div>
+                <div class="overflow-hidden">
                     <img class="d-block mw-100" src="./img/main_image.jpg" alt="">
                     <div>
                         <div class="text-container d-flex flex-column justify-content-center align-items-center text-center position-absolute">
                             <p class="font_eng eng_img_title_lt_45">JENNY IS YOUR TYPE</p>
-                            <p class="font_kr kr_img_sec_title_lt_17">스크린 속 아이콘. 제니의 켈빈클라인 모먼트</p>
+                            <p class="font_kr kr_img_sec_title_lt_17 d-sm-flex d-none">스크린 속 아이콘. 제니의 켈빈클라인 모먼트</p>
                             <a class="d-lg-none eng_mo_sec_title_reg_11 border-bottom border-white my-4" href="">NEW ARRIVLAS</a>
                         </div>
                     </div>
@@ -20,8 +20,8 @@
         </div>
         <div id="celebrity_outfit" class="d-flex justify-content-center align-items-center flex-lg-row flex-column margin_top_1">
             <div class="margin_right_1 position-relative d-flex justify-content-center m-lg-0 mt-1">
-                <div class="position-relative w-100">
-                    <img class="d-block w-100" src="./img/jk_outfit.png" alt="">
+                <div class="position-relative mw-100 overflow-hidden">
+                    <img class="d-block mw-100" src="./img/jk_outfit.png" alt="">
                     <div class="text-overlay text-white text-center position-absolute">
                         <p class="m-0 font_eng eng_img_sec_title_reg_24">MEN'S
                             <span class="d-block">READY TO WEAR</span>
@@ -31,8 +31,8 @@
                 </div>
             </div>
             <div class="jen position-relative d-flex justify-content-center m-lg-0 mt-1">
-                <div class="position-relative w-100">
-                    <img class="d-block w-100" src="./img/jen_outfit.png" alt="">
+                <div class="position-relative mw-100 overflow-hidden">
+                    <img class="d-block mw-100" src="./img/jen_outfit.png" alt="">
                     <div class="text-overlay text-white text-center position-absolute">
                         <p class="m-0 font_eng eng_img_sec_title_reg_24">WOMEN'S
                             <span class="d-block">READY TO WEAR</span>
@@ -42,7 +42,7 @@
                 </div>
             </div>
         </div>
-        <div id="calvin_selling" class="d-flex justify-content-end flex-column component_spacing">
+        <div id="calvin_selling" class="d-sm-flex d-none justify-content-end flex-column component_spacing">
                 <h3 class="font_eng eng_sec_title_black_reg_38">CALVIN KLEIN FOR YOU</h3>
            <!-- Swiper -->
            <div class="swiper swiper_go">
@@ -103,7 +103,7 @@
         </div>
         <div id="jen_in" class="component_spacing">
             <div class="title_spacing">
-                <p class="font_eng eng_sec_title_black_reg_38 d-flex flex-column align-items-center">JENNIE in Must Watch Denim
+                <p class="font_eng eng_sec_title_black_reg_38 d-flex flex-column align-items-center text-center text-sm-start">JENNIE in Must Watch Denim
                     <span class="font_kr kr_sub_txt_black_med_17">스크린 속 아이콘. 제니의 머스트해브 데님</span>
                 </p>
             </div>
@@ -126,14 +126,14 @@
         </div>
         <div id="jk_new">
             <div class="font_kr kr_sub_txt_black_lt_16 border_spacing">
-                <p class="d-md-flex d-none flex-column align-items-center lh-lg ">캘빈클라인은 한국의 21세기 팝 아이콘인 방탄소년단(BTS)의 멤버인 정국과 2024년 봄 캠페인 컬렉션 오픈을 함께 합니다.
+                <p class="d-lg-flex d-none flex-column align-items-center lh-lg ">캘빈클라인은 한국의 21세기 팝 아이콘인 방탄소년단(BTS)의 멤버인 정국과 2024년 봄 캠페인 컬렉션 오픈을 함께 합니다.
                     <span>캘빈클라인 데님을 특징으로 하는 이번 캠페인은 젊은 에너지와   90년대 스트레이트 핏 진, 전형적인 데님 실루엣에 향수를 불러일으키고,</span>
                     <span>새로운 데님부터 고급 캐주얼 의류까지 Calvin Klein Jeans 2024 봄 컬렉션은 아이코닉한 제품에 독특한 스타일을 선사하고 새로운 세대를 위한 브랜드의 진정성에 초점을 맞췄습니다.</span>
                 </p>
             </div>
-            <div class="d-flex flex-lg-row flex-column mx-5 mt-4 mx-5 mt-4 jk_mobile">
-                <div class="col-8">
-                    <img class="w-100" src="./img/jk_new.png" alt="">
+            <div class="d-flex flex-lg-row flex-column mx-sm-5 mt-sm-4 mx-sm-5 mt-sm-4 jk_mobile">
+                <div class="col-8 overflow-hidden">
+                    <img class="mw-100" src="./img/jk_new.png" alt="">
                 </div>
                 <div class="bg-black col-4 d-flex align-items-end text-center text-lg-start">
                     <div class="txt_spacing_in_bg mw-100 ps-lg-5 py-5">
@@ -161,11 +161,11 @@
                     <div class="d-flex flex-fill box_border_b position-relative">
                       <img class="w-50 h-100 object-fit-cover box_border_r" src="./img/underwear_men.png" alt="">
 
-                      <div class="m_img position-absolute top-0 left-0 d-sm-none w-100 text-white d-flex align-sm-items-center justify-content-sm-between flex-column ps-sm-3">
-                      <p class="d-flex flex-column pb-sm-5 eng_sec_title_white_reg_38">New Multipacks For Men
-                        <span class="font_kr kr_sub_txt_white_med_17">클래식한 코튼부터 마이크로 스트레치까지</span>
+                      <div class="m_img position-absolute d-sm-none w-100 text-white d-flex align-items-center justify-content-between flex-row px-3">
+                      <p class="d-flex flex-column eng_under_title_white_reg_38">New Multipacks For Men
+                        <span class="font_kr kr_under_txt_white_med_17">클래식한 코튼부터 마이크로 스트레치까지</span>
                       </p>
-                      <button class="d-sm-none bg-transparent border-white text-white me-sm-3 mt-sm-5 m_btn kr_btn_txt_white_med_16">남성 언더웨어 구매하기</button>
+                      <button class="d-sm-none bg-transparent border-white text-white m_btn kr_btn_txt_white_med_16">남성 언더웨어 구매하기</button>
                       </div>
                       
                       <div class="bg-black d-sm-flex d-none align-items-end w-50 h-100">
@@ -177,11 +177,11 @@
                     <div class="d-flex flex-fill position-relative">
                       <img class="w-50 h-100 object-fit-cover order-2" src="./img/underwear_women.png" alt="">
 
-                      <div class="m_img position-absolute top-0 left-0 d-sm-none w-100 text-white d-flex align-items-sm-center justify-content-sm-between flex-column ps-sm-3">
-                      <p class="d-flex flex-column pb-sm-5 eng_sec_title_white_reg_38">Three Knickers For Women
-                        <span class="font_kr kr_sub_txt_white_med_17">캐주얼과 센슈얼리티의 또 다른 정의</span>
+                      <div class="m_img position-absolute d-sm-none w-100 text-white d-flex align-items-center justify-content-between flex-row px-3">
+                      <p class="d-flex flex-column eng_under_title_white_reg_38">Three Knickers For Women
+                        <span class="font_kr kr_under_txt_white_med_17">캐주얼과 센슈얼리티의 또 다른 정의</span>
                       </p>
-                      <button class="d-sm-none bg-transparent border-white text-white me-sm-3 mt-sm-5 m_btn kr_btn_txt_white_med_16">여성 언더웨어 구매하기</button>
+                      <button class="d-sm-none bg-transparent border-white text-white m_btn kr_btn_txt_white_med_16">여성 언더웨어 구매하기</button>
                       </div>                      
 
                       <div class="bg-black d-sm-flex d-none align-items-end justify-content-end w-50 h-100 box_border_r ">

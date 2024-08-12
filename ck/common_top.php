@@ -52,6 +52,8 @@
     <script src="//unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- 커스터마이징 -->
+    <link rel="stylesheet" href="http://gominseo.dothome.co.kr/gnuboard/skin/faq/basic/style.css?ver=2303229">
+    <link rel="stylesheet" href="http://gominseo.dothome.co.kr/gnuboard/skin/member/basic/style.css?ver=2303229">
     <link rel="stylesheet" href="/ck/css/common.min.css">
     <link rel="stylesheet" href="/ck/css/ck.min.css">
  
@@ -64,16 +66,16 @@
 </head>
 <body>
     <header id="hd" class="my-3 px-xl-5 px-3 d-lg-flex align-items-lg-baseline justify-content-between position-relative">
-        <div class="d-flex align-items-baseline justify-content-between ">
-            <button id="hamburger-btn" class="bi bi-list border-0 bg-transparent ms-1 d-lg-none"></button> 
-            <h1 class="mb-0 d-block">
+        <div class="d-flex align-items-lg-baseline align-items-center justify-content-between ">
+            <button id="hamburger-btn" class="bi bi-list col-3 border-0 bg-transparent ms-sm-1 d-lg-none d-flex"></button> 
+            <h1 class="col-auto mb-0 d-block">
                 <a href="/ck" class="d-block text-decoration-none text-nowrap">
                     <img class="img-fluid d-block" src="https://www.calvinklein.co.kr/on/demandware.static/-/Library-Sites-calvin-klein-shared-library/default/dw65bf7326/header/full-logo.svg" alt="">
                 </a>
             </h1>
-            <div class="d-flex align-items-center d-lg-none mobile_menu">
-                <button class="bi bi-search border-0 bg-transparent mx-1"></button>  
-                <button class="bi bi-bag border-0 bg-transparent mx-1"></button>
+            <div class="col-3 d-flex align-items-center d-lg-none mobile_menu justify-content-end">
+                <button class="bi bi-search border-0 bg-transparent mx-sm-1"></button>  
+                <button class="bi bi-bag border-0 bg-transparent mx-sm-1"></button>
             </div>
             <div class="px-5 d-none d-lg-flex">
               <?php include_once(G5_PATH."/../ck/navi.php");?>
@@ -85,10 +87,10 @@
                 
 
                 <?php if ($is_member) {  ?>
-                    <li><a href="<?php echo G5_BBS_URL ?>/logout.php" class="mx-3">Sign Out</a></li>
+                    <li><a href="<?php echo G5_BBS_URL ?>/logout.php?url=/ck" class="mx-3">Sign Out</a></li>
                     <li><a href="<?php echo G5_BBS_URL ?>/member_confirm.php?url=<?php echo G5_BBS_URL ?>/register_form.php">Modify</a></li>          
                 <?php } else {  ?>
-                    <li><a href="<?php echo G5_BBS_URL ?>/login.php" class="mx-3">Sign in</a></li>
+                    <li><a href="<?php echo G5_BBS_URL ?>/login.php?url=/ck" class="mx-3">Sign in</a></li>
                     <li><a href="<?php echo G5_BBS_URL ?>/register.php">Register</a></li>
                 <?php }  ?>
 

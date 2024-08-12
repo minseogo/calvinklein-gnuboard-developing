@@ -70,7 +70,7 @@ $(document).ready(function() {
     }
 
     // 페이지 로드 시 Header 메뉴 생성
-    generateHeaderMenu();
+    //generateHeaderMenu();
 
     // Member 및 Icon 메뉴의 기능은 생략 (실제 동작을 위한 JavaScript 코드 추가 필요)
 
