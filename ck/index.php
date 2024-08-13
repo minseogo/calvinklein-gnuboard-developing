@@ -42,10 +42,28 @@
                 </div>
             </div>
         </div>
+        <div id="m_calvin_selling" class="d-none">
+            <div class="swiper swiper_mo">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="w-100" src="./img/selling_f_png.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="w-100" src="./img/selling_f_png.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="w-100" src="./img/selling_f_png.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="w-100" src="./img/selling_f_png.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="calvin_selling" class="d-sm-flex d-none justify-content-end flex-column component_spacing">
                 <h3 class="font_eng eng_sec_title_black_reg_38">CALVIN KLEIN FOR YOU</h3>
            <!-- Swiper -->
-           <div class="swiper swiper_go">
+           <div class="swiper swiper_web">
             <div class="swiper-wrapper">
               <div class="swiper-slide me-3">
                 <img class="w-100" src="./img/selling_f_png.png" alt="">
@@ -90,16 +108,17 @@
             </div>
           </div>
         </div>
-        <div id="video" class="component_spacing mw-100 position-relative d-none d-lg-flex">
-            <img class="mw-100 px-5 d-block" src="./img/video.img.png" alt="">
-            <div class="position-absolute text-container d-flex align-items-center justify-content-center flex-column">
+        <div id="video" class="component_spacing mw-100 position-relative d-none d-lg-flex justify-content-center">
+            <!-- YouTube 비디오 임베드 -->
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/oNt5tGOnxls" title="introducing ck one essence | Calvin Klein" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!-- <div class="position-absolute text-container d-flex align-items-center justify-content-center flex-column">
                 <i class="bi bi-play-fill text-white"></i>
                 <p class="font_eng eng_video_title_white_reg_30">THE ARCHIVE LOGO
                     <span class="font_kr kr_video_subtitle_white_reg_16 d-flex align-items-center justify-content-center flex-column mt-lg-5 mt-2">더 아카이브 로고
                         <span>변화된 현실 사이의 공간</span>
                     </span>
                 </p>
-            </div>
+            </div> -->
         </div>
         <div id="jen_in" class="component_spacing">
             <div class="title_spacing">
