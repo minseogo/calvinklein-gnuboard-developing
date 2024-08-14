@@ -47,7 +47,7 @@
                 </div>
             </div> -->
         </div>
-        <div id="m_calvin_selling" class="d-sm-none d-flex flex-column component_spacing">
+        <div id="m_calvin_selling" class="d-flex flex-column component_spacing">
             <h3 class="font_eng eng_sec_title_black_reg_38 title_spacing text-center">CALVIN KLEIN FOR YOU</h3>
             <div class="mo_swiper_height">
                 <div class="swiper swiper_mo w-100 h-100 ms-auto me-auto">
@@ -123,7 +123,7 @@
             </div>
 
         </div>
-        <div id="calvin_selling" class="d-sm-flex d-none justify-content-end flex-column component_spacing">
+        <div id="calvin_selling" class="d-flex justify-content-end flex-column component_spacing">
             <h3 class="font_eng eng_sec_title_black_reg_38">CALVIN KLEIN FOR YOU</h3>
            <!-- Swiper -->
             <div class="swiper swiper_web">

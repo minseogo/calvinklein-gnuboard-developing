@@ -256,14 +256,13 @@ h1 img {
             border-left: 0 !important;
             border-right: 0 !important;
         }
-
         }
     img{
         @media (max-width: 575px) {
-                object-fit: cover;
-                max-width: 200% !important;
-                height: auto;
-                margin-left: -50%;
+            object-fit: cover;
+            max-width: 200% !important;
+            height: auto;
+            margin-left: -50%;
         }  
     }
     
@@ -280,11 +279,24 @@ h1 img {
     @media (max-width:758px) {
         margin-left: 50px;
     }
+    @media (max-width:575px) {
+        height: 0;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
 }
 #m_calvin_selling {
     .mo_swiper_height{
         max-height: 910px;
         height: 176vw;
+    }
+    @media (max-width:5000px) and (min-width:575px){
+        height: 0;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
     }
 }
 #video {

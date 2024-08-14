@@ -280,10 +280,26 @@ h1 img {
     margin-left: 50px;
   }
 }
+@media (max-width: 575px) {
+  #calvin_selling {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+}
 
 #m_calvin_selling .mo_swiper_height {
   max-height: 910px;
   height: 176vw;
+}
+@media (max-width: 5000px) and (min-width: 575px) {
+  #m_calvin_selling {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 #video .bi-play-fill {

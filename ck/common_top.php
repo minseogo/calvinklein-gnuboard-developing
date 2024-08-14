@@ -125,7 +125,9 @@ include_once(G5_LIB_PATH.'/outlogin.lib.php');
                             <span class="ul_name eng_hdr_main_sb_16">MEN</span>
                             <div></div>
                         </button>
+
                         <ul class="eng_list_txt_reg_18 mt-5 px-3 list_con"> 
+                        <?php include_once(G5_PATH."/../ck/m_navi.php");?>
                             <li>
                                 <div>
                                     <button class="d-flex justify-content-between align-items-center w-100 border-0 bg-transparent">
@@ -133,10 +135,10 @@ include_once(G5_LIB_PATH.'/outlogin.lib.php');
                                         <span><i class="bi bi-plus"></i></span>
                                     </button>
                                     <ul class="kr_in_list_txt_reg_16 mx-2">
-                                        <li class="my-2">모두보기</li>
-                                        <li>의류</li>
-                                        <li class="my-2">언더웨어</li>
-                                        <li>악세서리</li>
+                                        <li class="my-2"><a href="">모두보기</a></li>
+                                        <li><a href="">의류</a></li>
+                                        <li class="my-2"><a href="">언더웨어</a></li>
+                                        <li><a href="">악세서리</a></li>
                                     </ul>
                                 </div>
                             </li>
