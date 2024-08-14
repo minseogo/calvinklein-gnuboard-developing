@@ -1,39 +1,49 @@
 <ul class="gnb d-lg-flex eng_hdr_main_sb_16 position-relative">
+<?php
+				$menu_datas = get_menu_db(0, true);
+				$gnb_zindex = 999; // gnb_1dli z-index 값 설정용
+                $i = 0;
+
+
+                foreach( $menu_datas as $row ){
+                    if( empty($row) ) continue;
+                   
+                ?>
+
+
                     <li class="gnb_li position-relative">
-                        <a href="/ck/subpage.php" class="gnb_a d-block">MEN</a>
-                        <ul class="gnb_ul position-absolute eng_hdr_sub_lt_13">
-                            <li class="gnb_ul_li"><a href="/gnuboard/bbs/board.php?bo_table=gallery" ><span>온라인 익스클루시브</span></a></li>
-                            <li class="gnb_ul_li"><a href="/ck/subpage.php?subtitle=남성+의류&inner=container-xl&col=3" ><span>남성 의류</span></a></li>
-                            <li class="gnb_ul_li"><a href="/ck/subpage.php?subtitle=악세사리" ><span>악세서리</span></a></li>
-                            <li class="gnb_ul_li"><a href="/ck/subpage.php?subtitle=온라인+익스클루시브"><span>언더웨어</span></a></li>
-                            <li class="gnb_ul_li"><a href="/ck/subpage.php?subtitle=온라인+익스클루시브"><span>슈즈</span></a></li>
-                        </ul>
+                        <a href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>" class="gnb_a d-block"><?php echo $row['me_name'] ?></a>
+                        <?php
+                    $k = 0;
+                    foreach( (array) $row['sub'] as $row2 ){
+
+                        if( empty($row2) ) continue; 
+
+                        if($k == 0)
+                            echo '<ul class="gnb_ul position-absolute eng_hdr_sub_lt_13">'.PHP_EOL;
+                    ?>
+                        
+                            <li class="gnb_ul_li"><a href="<?php echo $row2['me_link']; ?>" target="_<?php echo $row2['me_target']; ?>" ><span><?php echo $row2['me_name'] ?></span></a></li>
+                  
+                        
+                        <?php
+                    $k++;
+                    }   //end foreach $row2
+
+                    if($k > 0)
+                        echo '</ul>'.PHP_EOL;
+                    ?>
                     </li>
-                    <li class="gnb_li position-relative">
-                        <a href="/ck/subpage.php" class="gnb_a d-block">WOMEN</a>
-                        <ul class="gnb_ul position-absolute eng_hdr_sub_lt_13">
-                            <li class="gnb_ul_li"><a href="/ck/subpage.php?subtitle=온라인+익스클루시브"><span>온라인 익스클루시브</span></a></li>
-                            <li class="gnb_ul_li"><a href="/ck/subpage.php?subtitle=온라인+익스클루시브"><span>여성 의류</span></a></li>
-                            <li class="gnb_ul_li"><a href="/ck/subpage.php?subtitle=온라인+익스클루시브"><span>악세서리</span></a></li>
-                            <li class="gnb_ul_li"><a href="/ck/subpage.php?subtitle=온라인+익스클루시브"><span>언더웨어</span></a></li>
-                            <li class="gnb_ul_li"><a href="/ck/subpage.php?subtitle=온라인+익스클루시브"><span>슈즈</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="gnb_li position-relative">
-                        <a href="/ck/subpage.php" class="gnb_a d-block">SPORTS</a>
-                        <ul class="gnb_ul position-absolute eng_hdr_sub_lt_13">
-                            <li class="gnb_ul_li"><a href="/ck/subpage.php"><span>남성 스포츠</span></a></li>
-                            <li class="gnb_ul_li"><a href="/ck/subpage.php"><span>여성 스포츠</span></a></li>
-                            <li class="gnb_ul_li"><a href="/ck/subpage.php"><span>수영복</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="gnb_li position-relative">
-                        <a href="/ck/subpage.php" class="gnb_a d-block">DISCOVERY</a>
-                        <ul class="gnb_ul position-absolute eng_hdr_sub_lt_13">
-                            <li class="gnb_ul_li"><a href="/ck/subpage.php"><span>About Calvin klein</span></a></li>
-                            <li class="gnb_ul_li"><a href="/ck/subpage.php"><span>What's New</span></a></li>
-                            <li class="gnb_ul_li"><a href="/ck/subpage.php"><span>Best Seller</span></a></li>
-                            <li class="gnb_ul_li"><a href="/ck/subpage.php"><span>Sustainability</span></a></li>
-                        </ul>
-                    </li>
+                    <?php
+                    $i++;
+                           }   //end foreach $row
+
+                if ($i == 0) {  ?>
+                    <li class="gnb_li position-relative">메뉴 준비 중입니다.<?php if ($is_admin) { ?> <a href="<?php echo G5_ADMIN_URL; ?>/menu_list.php">관리자모드 &gt; 환경설정 &gt; 메뉴설정</a>에서 설정하실 수 있습니다.<?php } ?></li>
+                <?php } ?>
+                  
 </ul>
+
+
+
+              

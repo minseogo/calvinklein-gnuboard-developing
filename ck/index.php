@@ -1,10 +1,12 @@
 <?php 
+  if (!defined('_INDEX_')) define('_INDEX_', true);
+  define('_GOMINSEO_', true);
   include_once("./_common.php");
   include_once("./common_top.php");
 ?>
         <div id="mainimg">
             <div class="overlay position-relative">
-                <div class="overflow-hidden">
+                <!-- <div class="overflow-hidden">
                     <img class="d-block mw-100" src="./img/main_image.jpg" alt="">
                     <div>
                         <div class="text-container d-flex flex-column justify-content-center align-items-center text-center position-absolute">
@@ -13,14 +15,17 @@
                             <a class="d-lg-none eng_mo_sec_title_reg_11 border-bottom border-white my-4" href="">NEW ARRIVLAS</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
+                <?php echo latest('pic_block2', 'mainBanner', 1, 100);?>
                
             </div>
-    
+            
         </div>
         <div id="celebrity_outfit" class="d-flex justify-content-center align-items-center flex-lg-row flex-column margin_top_1">
-            <div class="margin_right_1 position-relative d-flex justify-content-center m-lg-0 mt-1">
+             <?php echo latest('pic_block3', 'celebrity_outfit', 2, 100);?>
+            <!-- <div class="margin_right_1 position-relative d-flex justify-content-center m-lg-0 mt-1">
                 <div class="position-relative mw-100 overflow-hidden">
+
                     <img class="d-block mw-100" src="./img/jk_outfit.png" alt="">
                     <div class="text-overlay text-white text-center position-absolute">
                         <p class="m-0 font_eng eng_img_sec_title_reg_24">MEN'S
@@ -40,77 +45,147 @@
                         <button class="bg-transparent kr_btn_txt_white_med_16 font_kr mt-3 celeb_btn border-white">제니 착장 제품 구매하기</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
-        <div id="m_calvin_selling" class="d-none">
-            <div class="swiper swiper_mo">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img class="w-100" src="./img/selling_f_png.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="w-100" src="./img/selling_f_png.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="w-100" src="./img/selling_f_png.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="w-100" src="./img/selling_f_png.png" alt="">
+        <div id="m_calvin_selling" class="d-sm-none d-flex flex-column component_spacing">
+            <h3 class="font_eng eng_sec_title_black_reg_38 title_spacing text-center">CALVIN KLEIN FOR YOU</h3>
+            <div class="mo_swiper_height">
+                <div class="swiper swiper_mo w-100 h-100 ms-auto me-auto">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide text-center d-flex justify-content-center align-items-center">
+                            <div class="w-100 h-100">
+                                <img class="mw-100" src="./img/selling_f_png.png" alt="">
+                                <div class="mt-2">
+                                    <p class="d-flex flex-column align-items-center kr_des_txt_sb_17">여성 롱슬리브 클래식 샴브레이 셔츠
+                                        <span>179,000 원</span>
+                                    </p>
+                                </div>
+                                <button class="kr_btn_txt_white_med_16 border-0 black_btns mt-2">장바구니에 추가</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide text-center d-flex justify-content-center align-items-center">
+                            <div class="w-100 h-100">
+                                <img class="mw-100" src="./img/selling_s_png.png" alt="">
+                                <div class="mt-2">
+                                    <p class="d-flex flex-column align-items-center kr_des_txt_sb_17">여성 90'S 히어로 트러커 자켓
+                                        <span>249,000 원</span>
+                                    </p>
+                                </div>
+                                <button class="kr_btn_txt_white_med_16 border-0 black_btns mt-2">장바구니에 추가</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide text-center d-flex justify-content-center align-items-center">
+                            <div class="w-100 h-100">
+                                <img class="mw-100" src="./img/selling_t_png.png" alt="">
+                                <div class="mt-2">
+                                    <p class="d-flex flex-column align-items-center kr_des_txt_sb_17">여성 베리게이티드 립 우븐 탭 탱크 탑
+                                        <span>69,000 원</span>
+                                    </p>
+                                </div>
+                                <button class="kr_btn_txt_white_med_16 border-0 black_btns mt-2">장바구니에 추가</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide text-center d-flex justify-content-center align-items-center">
+                            <div class="w-100 h-100">
+                                <img class="mw-100" src="./img/selling_four_png.png" alt="">
+                                <div class="mt-2">
+                                    <p class="d-flex flex-column align-items-center kr_des_txt_sb_17">여성 모노그램 로고 반팔 티셔츠
+                                        <span>89,000 원</span>
+                                    </p>
+                                </div>
+                                <button class="kr_btn_txt_white_med_16 border-0 black_btns mt-2">장바구니에 추가</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide text-center d-flex justify-content-center align-items-center">
+                            <div class="w-100 h-100">
+                                <img class="mw-100" src="./img/selling_f_png.png" alt="">
+                                <div class="mt-2">
+                                    <p class="d-flex flex-column align-items-center kr_des_txt_sb_17">여성 롱슬리브 클래식 샴브레이 셔츠
+                                        <span>179,000 원</span>
+                                    </p>
+                                </div>
+                                <button class="kr_btn_txt_white_med_16 border-0 black_btns mt-2">장바구니에 추가</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide text-center d-flex justify-content-center align-items-center">
+                            <div class="w-100 h-100">
+                                <img class="mw-100" src="./img/selling_s_png.png" alt="">
+                                <div class="mt-2">
+                                    <p class="d-flex flex-column align-items-center kr_des_txt_sb_17">여성 90'S 히어로 트러커 자켓
+                                        <span>249,000 원</span>
+                                    </p>
+                                </div>
+                                <button class="kr_btn_txt_white_med_16 border-0 black_btns mt-2">장바구니에 추가</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
         <div id="calvin_selling" class="d-sm-flex d-none justify-content-end flex-column component_spacing">
-                <h3 class="font_eng eng_sec_title_black_reg_38">CALVIN KLEIN FOR YOU</h3>
+            <h3 class="font_eng eng_sec_title_black_reg_38">CALVIN KLEIN FOR YOU</h3>
            <!-- Swiper -->
-           <div class="swiper swiper_web">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide me-3">
-                <img class="w-100" src="./img/selling_f_png.png" alt="">
-                <div class="font_kr">
-                    <a class="d-flex flex-column  mt-3 kr_des_txt_sb_17">남성 90's 스트레이트핏 블랙 데님
-                        <span class="mt-2 kr_price_txt_med_15">229,000 원</span>
-                    </a>
+            <div class="swiper swiper_web">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide me-3">
+                        <img class="w-100" src="./img/selling_f_png.png" alt="">
+                        <div class="font_kr">
+                            <a class="d-flex flex-column mt-3 kr_des_txt_sb_17">여성 롱슬리브 클래식 샴브레이 셔츠
+                                <span class="mt-2 kr_price_txt_med_15">179,000 원</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide me-3">
+                        <img class="w-100" src="./img/selling_s_png.png" alt="">
+                        <div class="font_kr">
+                            <a class=" d-flex flex-column mt-3 kr_des_txt_sb_17">여성 90'S 히어로 트러커 자켓
+                                <span class="mt-2 kr_price_txt_med_15">249,000 원</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide me-3">
+                        <img class="w-100" src="./img/selling_t_png.png" alt="">
+                        <div class="font_kr">
+                            <a class="d-flex flex-column mt-3 kr_des_txt_sb_17">여성 베리게이티드 립 우븐 탭 탱크 탑
+                                <span class="mt-2 kr_price_txt_med_15">69,000 원</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide me-3">
+                        <img class="w-100" src="./img/selling_four_png.png" alt="">
+                        <div class="font_kr">
+                            <a class="d-flex flex-column mt-3 kr_des_txt_sb_17">여성 모노그램 로고 반팔 티셔츠
+                                <span class="mt-2 kr_price_txt_med_15">89,000 원</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide me-3">
+                        <img class="w-100" src="./img/selling_f_png.png" alt="">
+                        <div class="font_kr">
+                            <a class="d-flex flex-column mt-3 kr_des_txt_sb_17">여성 롱슬리브 클래식 샴브레이 셔츠
+                                <span class="mt-2 kr_price_txt_med_15">179,000 원</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide me-3">
+                        <img class="w-100" src="./img/selling_s_png.png" alt="">
+                        <div class="font_kr">
+                            <a class=" d-flex flex-column mt-3 kr_des_txt_sb_17">여성 90'S 히어로 트러커 자켓
+                                <span class="mt-2 kr_price_txt_med_15">249,000 원</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="swiper-slide me-3">
-                <img class="w-100" src="./img/selling_f_png.png" alt="">
-                <div class="font_kr">
-                    <a class=" d-flex flex-column mt-3 kr_des_txt_sb_17">남성 90's 스트레이트핏 블랙 데님
-                        <span class="mt-2 kr_price_txt_med_15">229,000 원</span>
-                    </a>
-                </div>
-              </div>
-              <div class="swiper-slide me-3">
-                <img class="w-100" src="./img/selling_f_png.png" alt="">
-                <div class="font_kr">
-                    <a class="d-flex flex-column mt-3 kr_des_txt_sb_17">남성 90's 스트레이트핏 블랙 데님
-                        <span class="mt-2 kr_price_txt_med_15">229,000 원</span>
-                    </a>
-                </div>
-              </div>
-              <div class="swiper-slide me-3">
-                <img class="w-100" src="./img/selling_f_png.png" alt="">
-                <div class="font_kr">
-                    <a class="d-flex flex-column mt-3 kr_des_txt_sb_17">남성 90's 스트레이트핏 블랙 데님
-                        <span class="mt-2 kr_price_txt_med_15">229,000 원</span>
-                    </a>
-                </div>
-              </div>
-              <div class="swiper-slide me-3">
-                <img class="w-100" src="./img/selling_f_png.png" alt="">
-                <div class="font_kr">
-                    <a class="d-flex flex-column mt-3 kr_des_txt_sb_17">남성 90's 스트레이트핏 블랙 데님
-                        <span class="mt-2 kr_price_txt_med_15">229,000 원</span>
-                    </a>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
         <div id="video" class="component_spacing mw-100 position-relative d-none d-lg-flex justify-content-center">
             <!-- YouTube 비디오 임베드 -->
-            <iframe width="1280" height="720" src="https://www.youtube.com/embed/oNt5tGOnxls" title="introducing ck one essence | Calvin Klein" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="container mw-100">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/oNt5tGOnxls" title="introducing ck one essence | Calvin Klein" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
             <!-- <div class="position-absolute text-container d-flex align-items-center justify-content-center flex-column">
                 <i class="bi bi-play-fill text-white"></i>
                 <p class="font_eng eng_video_title_white_reg_30">THE ARCHIVE LOGO
@@ -220,7 +295,7 @@
                     </div>
                     <div class="btns_title_spacing mt-md-0 mt-5">
                         <button class="font_kr kr_btn_txt_white_med_16 border-0 black_btns">여성 언더웨어 구매하기</button>
-                        <button class="font_kr kr_btn_txt_white_med_16 border-0 black_btns ms-4">남성 언더웨어 구매하기</button>
+                        <button class="font_kr kr_btn_txt_white_med_16 border-0 black_btns ms-4 men_btn">남성 언더웨어 구매하기</button>
                     </div>
                 </div>
         </div>

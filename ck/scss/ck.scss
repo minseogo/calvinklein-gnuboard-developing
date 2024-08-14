@@ -217,7 +217,7 @@ h1 img {
     transform: translate(-50%, -50%);
 }
 #mainimg{
-    @media (max-width: 375px) {
+    @media (max-width: 575px) {
         img {
             object-fit: cover;
             max-width: 200% !important;
@@ -259,7 +259,7 @@ h1 img {
 
         }
     img{
-        @media (max-width: 375px) {
+        @media (max-width: 575px) {
                 object-fit: cover;
                 max-width: 200% !important;
                 height: auto;
@@ -271,6 +271,9 @@ h1 img {
 // 캘빈 제품 슬라이드
 #calvin_selling{
     margin-left: 235px;
+    @media(max-width:1200px){
+        margin-left: 170px;
+    }
     .swiper {
         max-width: 100%;
     }
@@ -278,24 +281,11 @@ h1 img {
         margin-left: 50px;
     }
 }
-#m_calvin_selling{
-    .swiper {
-        width: 100%;
-        height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        height: calc((100% - 30px) / 2) !important;
-
-        /* Center slide text vertically */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+#m_calvin_selling {
+    .mo_swiper_height{
+        max-height: 910px;
+        height: 176vw;
+    }
 }
 #video {
     .bi-play-fill{
@@ -363,6 +353,19 @@ h1 img {
             border-right: 0 !important;
             margin-top: 10rem;
         }
+    }
+    @media (max-width:900px) and (min-width:768px){
+        .btns_title_spacing{
+            margin-left: 0 !important;
+            display: flex;
+            flex-direction: column;
+            .men_btn{
+                margin-top: 1rem;
+                margin-left: 0 !important;
+            }
+        }
+
+
     }
     @media (max-width:320px){
         .m_img {

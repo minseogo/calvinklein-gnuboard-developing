@@ -1,3 +1,7 @@
+<?php
+include_once(G5_LIB_PATH.'/latest.lib.php');
+include_once(G5_LIB_PATH.'/outlogin.lib.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,6 +39,9 @@
 
     <!-- font icon -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="<?php echo G5_THEME_CSS_URL; ?>/default.css">
+
 
     <!-- 초기화 -->
     <link href="//cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
@@ -229,4 +236,9 @@
         </div>
    
     </header>
+    <?php
+    if(defined('_INDEX_')) { // index에서만 실행
+        include G5_BBS_PATH.'/newwin.inc.php'; // 팝업레이어
+    }
+    ?>
     <div class="<?php echo $_GET["inner"]; ?>">

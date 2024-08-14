@@ -181,26 +181,23 @@
         });
     });
 </script>
-<!-- Swiper -->
+<!-- Web Swiper -->
 <script>
   var swiper = new Swiper(".swiper_web", {
     watchSlidesProgress: true,
     slidesPerView: 4,
   });
 </script>
+<!-- Mobile Swiper -->
 <script>
-      var swiper = new Swiper(".swiper_mo", {
-        slidesPerView: 2,
-        grid: {
-          rows: 2,
-        },
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
+    var swiper = new Swiper(".swiper_mo", {
+      slidesPerView: 2,
+      grid: {
+        rows: 2,
+      },
+      spaceBetween: 30,
+    });
+  </script>
 <!-- Language Form -->
 <script>
     document.querySelector('.lang .dropdown_btn').addEventListener('click', function() {
