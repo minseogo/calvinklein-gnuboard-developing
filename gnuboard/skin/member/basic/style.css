@@ -2,7 +2,7 @@
 
 /* ### 기본 스타일 커스터마이징 시작 ### */
 /* 기본박스 */
-.mbskin {position:relative;margin:100px auto 0;width:360px;text-align:center}
+.mbskin {position:relative;margin:100px auto;width:360px;text-align:center}
 .mbskin:after {right:10px;left:auto;
   -webkit-transform:skew(8deg) rotate(3deg);
     -moz-transform:skew(8deg) rotate(3deg);
@@ -14,6 +14,7 @@
 .mbskin .btn_submit {width:100%;margin:10px 0 0;height:45px;font-weight:bold;font-size:1.25em}
 .mbskin h1 {margin:60px 0 30px;font-size:2em}
 .mbskin .tbl_frm01 th {width:85px}
+.mbskin .mb_log_cate h2{font-size: 1.5rem; font-weight: 700;}
 /* ### 기본 스타일 커스터마이징 끝 ### */
 
 /* 회원가입 약관 */
@@ -148,7 +149,7 @@
 #login_info {}
 #login_info:after {display:block;visibility:hidden;clear:both;content:""}
 #login_info .login_if_auto {float:left}
-#login_info .login_if_auto label {vertical-align:baseline;padding-left:5px}
+#login_info .login_if_auto label {vertical-align:baseline;padding-left:32px}
 #login_info .login_if_lpl {float:right}
 #login_password_lost {display:inline-block;border:1px solid #d5d9dd;color:#3a8afd;border-radius:2px;padding:2px 5px;line-height:20px}
 

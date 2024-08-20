@@ -1,21 +1,12 @@
 <?php 
   if (!defined('_INDEX_')) define('_INDEX_', true);
   define('_GOMINSEO_', true);
-  include_once("./_common.php");
+
   include_once("./common_top.php");
 ?>
         <div id="mainimg">
             <div class="overlay position-relative">
-                <!-- <div class="overflow-hidden">
-                    <img class="d-block mw-100" src="./img/main_image.jpg" alt="">
-                    <div>
-                        <div class="text-container d-flex flex-column justify-content-center align-items-center text-center position-absolute">
-                            <p class="font_eng eng_img_title_lt_45">JENNY IS YOUR TYPE</p>
-                            <p class="font_kr kr_img_sec_title_lt_17 d-sm-flex d-none">스크린 속 아이콘. 제니의 켈빈클라인 모먼트</p>
-                            <a class="d-lg-none eng_mo_sec_title_reg_11 border-bottom border-white my-4" href="">NEW ARRIVLAS</a>
-                        </div>
-                    </div>
-                </div> -->
+              
                 <?php echo latest('pic_block2', 'mainBanner', 1, 100);?>
                
             </div>
@@ -23,29 +14,7 @@
         </div>
         <div id="celebrity_outfit" class="d-flex justify-content-center align-items-center flex-lg-row flex-column margin_top_1">
              <?php echo latest('pic_block3', 'celebrity_outfit', 2, 100);?>
-            <!-- <div class="margin_right_1 position-relative d-flex justify-content-center m-lg-0 mt-1">
-                <div class="position-relative mw-100 overflow-hidden">
-
-                    <img class="d-block mw-100" src="./img/jk_outfit.png" alt="">
-                    <div class="text-overlay text-white text-center position-absolute">
-                        <p class="m-0 font_eng eng_img_sec_title_reg_24">MEN'S
-                            <span class="d-block">READY TO WEAR</span>
-                        </p>
-                        <button class="bg-transparent kr_btn_txt_white_med_16 font_kr mt-3 celeb_btn border-white">정국 착장 제품 구매하기</button>
-                    </div>
-                </div>
-            </div>
-            <div class="jen position-relative d-flex justify-content-center m-lg-0 mt-1">
-                <div class="position-relative mw-100 overflow-hidden">
-                    <img class="d-block mw-100" src="./img/jen_outfit.png" alt="">
-                    <div class="text-overlay text-white text-center position-absolute">
-                        <p class="m-0 font_eng eng_img_sec_title_reg_24">WOMEN'S
-                            <span class="d-block">READY TO WEAR</span>
-                        </p>
-                        <button class="bg-transparent kr_btn_txt_white_med_16 font_kr mt-3 celeb_btn border-white">제니 착장 제품 구매하기</button>
-                    </div>
-                </div>
-            </div> -->
+         
         </div>
         <div id="m_calvin_selling" class="d-flex flex-column component_spacing">
             <h3 class="font_eng eng_sec_title_black_reg_38 title_spacing text-center">CALVIN KLEIN FOR YOU</h3>
@@ -180,20 +149,13 @@
             </div>
         </div>
         <div id="video" class="component_spacing mw-100 position-relative d-none d-lg-flex justify-content-center">
-            <!-- YouTube 비디오 임베드 -->
+          <!-- YouTube 비디오 임베드 -->
             <div class="container mw-100">
                 <div class="ratio ratio-16x9">
-                    <iframe src="https://www.youtube.com/embed/oNt5tGOnxls" title="introducing ck one essence | Calvin Klein" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <?php echo latest('pic_block4', 'video', 1, 100);?>
+                    <!-- <iframe src="https://www.youtube.com/embed/oNt5tGOnxls" title="introducing ck one essence | Calvin Klein" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
                 </div>
-            </div>
-            <!-- <div class="position-absolute text-container d-flex align-items-center justify-content-center flex-column">
-                <i class="bi bi-play-fill text-white"></i>
-                <p class="font_eng eng_video_title_white_reg_30">THE ARCHIVE LOGO
-                    <span class="font_kr kr_video_subtitle_white_reg_16 d-flex align-items-center justify-content-center flex-column mt-lg-5 mt-2">더 아카이브 로고
-                        <span>변화된 현실 사이의 공간</span>
-                    </span>
-                </p>
-            </div> -->
+            </div> 
         </div>
         <div id="jen_in" class="component_spacing">
             <div class="title_spacing">

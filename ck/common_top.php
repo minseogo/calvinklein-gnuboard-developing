@@ -1,4 +1,5 @@
 <?php
+include_once("./_common.php");
 include_once(G5_LIB_PATH.'/latest.lib.php');
 include_once(G5_LIB_PATH.'/outlogin.lib.php');
 ?>
@@ -50,7 +51,7 @@ include_once(G5_LIB_PATH.'/outlogin.lib.php');
     <link href="//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 
-    <link rel="stylesheet" href="http://gominseo.dothome.co.kr/gnuboard/skin/board/subsecond/style.css?ver=2303229">
+    <link rel="stylesheet" href="/gnuboard/skin/board/subsecond/style.css?ver=2303229">
     <!-- 플러그인 -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="//cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -59,8 +60,8 @@ include_once(G5_LIB_PATH.'/outlogin.lib.php');
     <script src="//unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- 커스터마이징 -->
-    <link rel="stylesheet" href="http://gominseo.dothome.co.kr/gnuboard/skin/faq/basic/style.css?ver=2303229">
-    <link rel="stylesheet" href="http://gominseo.dothome.co.kr/gnuboard/skin/member/basic/style.css?ver=2303229">
+    <link rel="stylesheet" href="/gnuboard/skin/faq/basic/style.css?ver=2303229">
+    <link rel="stylesheet" href="/gnuboard/skin/member/basic/style.css?ver=2303229">
     <link rel="stylesheet" href="/ck/css/common.min.css">
     <link rel="stylesheet" href="/ck/css/ck.min.css">
  
@@ -114,7 +115,8 @@ include_once(G5_LIB_PATH.'/outlogin.lib.php');
         </div>
         <div class="d-lg-none">
             <div id="overlay" class="overlay"></div>
-            <ul id="mobile-menu" class="position-fixed bg-white">
+            <?php include_once(G5_PATH."/../ck/m_navi.php");?>
+            <!-- <ul id="mobile-menu" class="position-fixed bg-white">
                 <li class="py-2 px-3 d-flex align-items-center mt-5">
                     <button class="menu-btn d-flex justify-content-between align-items-center w-100 bg-white border-0">
                         <span class="ul_name eng_hdr_main_sb_16">MEN</span>
@@ -125,9 +127,9 @@ include_once(G5_LIB_PATH.'/outlogin.lib.php');
                             <span class="ul_name eng_hdr_main_sb_16">MEN</span>
                             <div></div>
                         </button>
-
+                        
                         <ul class="eng_list_txt_reg_18 mt-5 px-3 list_con"> 
-                        <?php include_once(G5_PATH."/../ck/m_navi.php");?>
+                        
                             <li>
                                 <div>
                                     <button class="d-flex justify-content-between align-items-center w-100 border-0 bg-transparent">
@@ -234,7 +236,7 @@ include_once(G5_LIB_PATH.'/outlogin.lib.php');
                     <i class="bi bi-telephone me-2"></i>
                     <a href="" class="d-block kr_m_hdr_sub_reg_15 ">문의하기</a>
                 </li>    
-            </ul>
+            </ul> -->
         </div>
    
     </header>

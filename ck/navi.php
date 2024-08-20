@@ -18,7 +18,7 @@
             if($k == 0)
                 echo '<ul class="gnb_ul position-absolute eng_hdr_sub_lt_13">'.PHP_EOL;
         ?>
-                <li class="gnb_ul_li"><a href="<?php echo $row2['me_link']; ?>" target="_<?php echo $row2['me_target']; ?>" ><span><?php echo $row2['me_name'] ?></span></a></li>
+                <li class="gnb_ul_li"><a href="<?php echo $row2['me_link']; ?>" target="_<?php echo $row2['me_target']; ?>" class="text-nowrap" ><span><?php echo $row2['me_name'] ?></span></a></li>
             <?php
         $k++;
         }   //end foreach $row2
